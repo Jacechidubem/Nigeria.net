@@ -1,0 +1,139 @@
+/* Reset default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+/* Header styles */
+header {
+    background-color: #007BFF; /* Primary blue color */
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Section styles */
+section {
+    width: 90%;
+    max-width: 1200px; 
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: white;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+h1 {
+    text-align: center;
+    color: #007BFF; /* Primary blue color */
+    margin-bottom: 10px;
+}
+
+.date {
+    text-align: center;
+    color: #FFD700; /* Gold color for date */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Schedule styles */
+.schedule {
+    margin-top: 20px;
+}
+
+.schedule h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.schedule hr {
+    border: 1px solid #007BFF; /* Blue color for the line */
+    margin: 10px 0;
+}
+
+.schedule-item {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #007BFF; /* Blue border for each schedule item */
+    border-radius: 5px;
+    background-color: #e7f3ff; /* Light blue background for schedule items */
+}
+
+.time {
+    color: #007BFF; /* Blue color for time */
+    font-weight: bold;
+}
+
+.event-title {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer nav a {
+    color: white;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+}

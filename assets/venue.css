@@ -1,0 +1,104 @@
+/* Basic body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: 100vh; /* Full height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Header styles */
+header {
+    background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
+    color: white;
+    padding: 20px 0;
+    position: relative; /* Position relative for stacking */
+    z-index: 10; /* Ensure header is above the image */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Venue section styles */
+.venue-section {
+    position: relative; /* Position relative for stacking */
+    height: calc(100vh - 100px); /* Full height minus header and footer */
+    background-image: url('images/map.png'); /* Background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color: white; /* Text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+    align-items: center; /* Center text horizontally */
+    text-align: center; /* Center text alignment */
+    padding: 20px; /* Padding for the text */
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 1.2rem; /* Slightly larger font size for the date */
+    margin-bottom: 20px;
+}
+
+.venue-description {
+    max-width: 800px; /* Limit the width of the description */
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer nav a {
+    color: white;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+}
